@@ -363,6 +363,8 @@ a {
 @media only screen and (max-width: 768px) {
   .wrapper-upper {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 .left {
@@ -378,14 +380,17 @@ a {
   border: 3px solid greenyellow;
 }
 .right {
+  width: 80%;
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: center;
   flex-direction: column;
 }
 form {
   margin-top: 20px;
+  width: 100%;
 }
 input {
   width: 50%;
@@ -485,7 +490,13 @@ button:hover {
   .countdown {
     width: 80%;
   }
-  .input {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
 }
+
 /* End of Footer */
