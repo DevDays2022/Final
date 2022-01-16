@@ -38,11 +38,13 @@ h2 {
   font-weight: 800;
 }
 .countdown {
+  width: min(80%, 70rem);
   border: 1px solid greenyellow;
   color: white;
   font-size: 2rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-weight: 800;
 }
@@ -50,24 +52,28 @@ h3 {
   font-size: 2rem;
 }
 .container-day {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
 }
 .container-hour {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
 }
 .container-minute {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
 }
 .container-second {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,6 +478,14 @@ button:hover {
   }
   .right-lower {
     flex-direction: column;
+  }
+  .coming-soon h2 {
+    text-align: center;
+  }
+  .countdown {
+    width: 80%;
+  }
+  .input {
   }
 }
 /* End of Footer */
