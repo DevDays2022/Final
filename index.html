@@ -268,19 +268,25 @@
     <!-- End of Our Team -->
     <!-- Footer -->
     <section class="footer">
-      
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_4CJE2Bzgjb69e1AOC9OnH");
+})();
+</script>
       <div class="wrapper-upper">
         <div class="left"><h2 style="text-align: center;">Contact Us</h2>
         <img src="./Images/dev days5.jpg" alt="">
         </div>
         <div class="right">
           <form>
-            <input type="text" placeholder="Name" name="user_name">
-            <input type="text" placeholder="Subject" name="user_sub">
-            <input type="text" placeholder="Email" name="user_email">
-            <textarea placeholder="Message" name="message" rows="5" ></textarea>
-            <button>Submit</button>
+            <input type="text" id="name" placeholder="Name" name="user_name">
+            <input type="text" id="subj" placeholder="Subject" name="user_sub">
+            <input type="text" id="email" placeholder="Email" name="user_email">
+            <textarea id="message" placeholder="Message" name="message" rows="5" ></textarea>
           </form>
+          <button onclick="sendMail()">Submit</button>
+          <p id="response"></p>
         </div>
       </div>
       <div class="wrapper-lower">
