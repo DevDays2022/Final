@@ -417,17 +417,17 @@ button:hover {
   font-weight: 800;
 }
 .wrapper-lower {
-  height: 20vh;
+  height: max-content;
   background-color: var(--clr-foreground);
   display: flex;
 }
 .left-lower {
   flex: 1;
-  padding: 1rem;
+  padding: 1em;
 }
 .left-lower p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 .left-lower a {
   color: greenyellow;
@@ -462,5 +462,16 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-lower {
+    flex-direction: column;
+  }
+  .center-lower {
+    flex-direction: column;
+  }
+  .right-lower {
+    flex-direction: column;
+  }
 }
 /* End of Footer */
